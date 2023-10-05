@@ -10,7 +10,7 @@
     name: pants lint
     always_run: false
     description: runs ./pants --no-dynamic-ui lint on python files
-    entry: ./pants lint
+    entry: ./pants --no-dynamic-ui lint
     language: system
     pass_filenames: true
     types: [file,python]
@@ -18,7 +18,15 @@
     name: pants check
     always_run: false
     description: runs ./pants --no-dynamic-ui check on python files
-    entry: ./pants check
+    entry: ./pants --no-dynamic-ui check
+    language: system
+    pass_filenames: true
+    types: [file,python]
+-   id: pants-test
+    name: pants test
+    always_run: false
+    description: runs ./pants --no-dynamic-ui test on python files
+    entry: ./pants --no-dynamic-ui test
     language: system
     pass_filenames: true
     types: [file,python]
