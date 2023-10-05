@@ -12,8 +12,11 @@ A collection of hooks for use with pants.
 ## How to use this repo?
 
 ```
--   repo: https://github.com/rcuza/pants-pre-commit-hooks
+-   repo: https://github.com/sTomerG/pants-pre-commit-hooks
     rev: v0.1.0
     hooks:
     -   id: pants-lint
 ```
+
+## Credits
+Forked from https://github.com/rcuza/pants-pre-commit-hooks
